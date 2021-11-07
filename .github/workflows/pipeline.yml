@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🔎 Branch name: ${{ github.ref }}, repository: ${{ github.repository }}."
+      - run: echo "🔎 Branch name ${{ github.ref }}, repository ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v2
 
