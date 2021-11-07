@@ -1,0 +1,5 @@
+.cpcache
+.nrepl-port
+.DS_Store
+.git
+.clj-kondo*

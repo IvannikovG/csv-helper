@@ -1,0 +1,6 @@
+line_num, test_field1@, test/Field_2, test.*@field3, key
+1, 1, 2, 3, key
+2, 4, 5, 6, key
+3, 8, 2, 1, key
+4, 4, 5, 6, key
+5, 8, 2, 1, key

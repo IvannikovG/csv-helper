@@ -1,0 +1,23 @@
+{:paths ["src"]
+ :deps {matcho/matcho {:mvn/version "0.1.0-RC6"}
+        org.clojure/data.csv {:mvn/version "1.0.0"}}
+
+ :aliases {:kaocha
+           {:extra-deps {lambdaisland/kaocha {:mvn/version "1.0.732"}}
+            :jvm-opts ^:replace ["-XX:-OmitStackTraceInFastThrow"]
+            :main-opts ["-m" "kaocha.runner" "--config-file" "test.edn"]}
+
+           :test
+           {:extra-paths ["test"]}
+
+           :nrepl
+           {:extra-paths ["dev" "zrc"]
+            :main-opts ["-m" "nrepl.cmdline"
+                        "-b" "0.0.0.0"
+                        "-p" "7777"
+                        "--middleware" "cider.nrepl/cider-middleware,refactor-nrepl.middleware/wrap-refactor"]
+            :extra-deps
+            {nrepl/nrepl {:mvn/version "0.8.3"}
+             cider/piggieback {:mvn/version "0.4.2"}}}}
+
+ }
