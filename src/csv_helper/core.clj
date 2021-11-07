@@ -1,4 +1,4 @@
-(ns core
+(ns csv-helper.core
   (:require [clojure.data.csv :as csv]
             [clojure.java.io  :as io]
             [clojure.string :as str]

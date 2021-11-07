@@ -1,5 +1,5 @@
-(ns core-test
-  (:require [core :as sut]
+(ns csv-helper.core-test
+  (:require [csv-helper.core :as sut]
             [matcho.core :as matcho]
             [clojure.test :as t :refer [deftest is]]))
 
